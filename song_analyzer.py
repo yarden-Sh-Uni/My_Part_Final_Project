@@ -14,7 +14,7 @@ class SongAnalyzer:
         self.min_width_sec = min_width_sec
         self.number_of_levels = number_of_levels
         self.sensitivity_power = sensitivity_power
-        # todo
+    
         self.standard_values = {'bass':{'mu':0.038015, 'sigma':0.073480},
                                 'drums':{'mu':0.028142, 'sigma':0.07326},
                                 'vocals':{'mu':0.022812, 'sigma':0.049614},
@@ -358,4 +358,5 @@ class SongAnalyzer:
             seconds = i // self.sample_rate
             labels.append(f"{seconds // 60}:{seconds % 60}")
             i += self.sample_rate * 10
+
         return positions, labels
