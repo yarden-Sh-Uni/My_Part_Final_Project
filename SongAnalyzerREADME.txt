@@ -10,7 +10,7 @@ interface_flow_test.py - UI
 ------How to run the UI?---------
 
 Run the script:
-"python .\interface_flow_test.py --track_path <track to analyze> <other arguments optional-see below>"
+"python .\interface_flow.py --track_path <track to analyze> <other arguments optional-see below>"
 
 parser.add_argument('--scale', type=str,default='Relative', help='Scale to use') # scales Relative, Normal, Percentile
 parser.add_argument('--min_seg_length_sec', type=int,default=5, help="Min Segment length in sec")
@@ -28,3 +28,4 @@ After the code is running upload the audio file at "Load Audio"
 In the "class_tester.py" note to main funcitons:
 1.run - full song analysis option to include speration
 2.single_track_run - single track analysis
+
